@@ -1,13 +1,17 @@
 const express = require('express');
-const websiteRoutes = require('./website');
+const briefRoutes = require('./brief');
+const deployRoutes = require('./deploy');
+const statusRoutes = require('./status');
 const healthRoutes = require('./health');
 
 const router = express.Router();
 
-// Health check route
+// Health check route (no auth required)
 router.use('/health', healthRoutes);
 
-// Website generation routes
-router.use('/website', websiteRoutes);
+// API routes (with auth)
+router.use('/brief', briefRoutes);
+router.use('/deploy', deployRoutes);
+router.use('/status', statusRoutes);
 
 module.exports = router;
