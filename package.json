@@ -1,0 +1,26 @@
+{
+  "name": "ekipa-strategow-backend",
+  "version": "1.0.0",
+  "description": "AI-powered website generation backend for EKIPA STRATEGÓW. Orchestrates briefs, generates HTML/CSS/JS, and deploys to Netlify.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "nodemon": "^3.1.11"
+  }
+}
